@@ -12,7 +12,7 @@ public sealed class ClientInnerBodyAnomalySystem : SharedInnerBodyAnomalySystem
         SubscribeLocalEvent<InnerBodyAnomalyComponent, AfterAutoHandleStateEvent>(OnAfterHandleState);
         SubscribeLocalEvent<InnerBodyAnomalyComponent, ComponentShutdown>(OnCompShutdown);
     }
-
+    //what
     private void OnAfterHandleState(Entity<InnerBodyAnomalyComponent> ent, ref AfterAutoHandleStateEvent args)
     {
         if (!TryComp<SpriteComponent>(ent, out var sprite))
